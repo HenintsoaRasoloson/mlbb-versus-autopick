@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/static-build",
+      "config": { "distDir": "dist" }
+    }
+  ],
+  "routes": [
+    { "src": "/api/hero-list", "dest": "/api/hero-list" },
+    { "src": "/api/hero-detail/(?<id>.*)", "dest": "/api/hero-detail/$1" },
+    { "src": "/(.*)", "dest": "/" }
+  ]
+}
