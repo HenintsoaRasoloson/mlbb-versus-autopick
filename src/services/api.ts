@@ -7,7 +7,7 @@ import type {
   Role,
 } from "../types/Hero";
 
-const BASE_API_URL = import.meta.env.VITE_BASE_API_URL;
+const BASE_API_URL = "/api";
 export const fetchHeroList = async (): Promise<Hero[]> => {
   try {
     const response = await fetch(`${BASE_API_URL}/hero-list/`);
