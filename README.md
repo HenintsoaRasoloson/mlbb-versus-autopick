@@ -1,7 +1,5 @@
 # MLBB Versus Autopick
 
-![MLBB Versus Autopick Preview](https://via.placeholder.com/1200x600/1a1a3a/FFD700?text=MLBB+Versus+Autopick)
-
 **A Random Hero Picker for Mobile Legends: Bang Bang (MLBB)**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
