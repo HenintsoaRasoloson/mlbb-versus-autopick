@@ -68,13 +68,14 @@ You can try out the live demo soon
 
    2.Navigate to the project directory:
 
-```
+```bash
 cd mlbb-versus-autopick
 ```
 
 3. Install dependencies:
 
-```npm install
+```bash
+npm install
 
 ```
 
