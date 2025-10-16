@@ -14,6 +14,7 @@ import {
   PageContainer,
   HeaderTitle,
 } from "./components/StylesComponents";
+import { Loading } from "./components/Loading";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
@@ -55,7 +56,7 @@ function App() {
   };
 
   if (isLoading) {
-    return <div>Loading heroes...</div>;
+    return <Loading />;
   }
 
   if (error) {
