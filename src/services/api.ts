@@ -7,8 +7,7 @@ import type {
   Role,
 } from "../types/Hero";
 
-const BASE_API_URL = "https://mlbb-stats.ridwaanhall.com/api";
-
+const BASE_API_URL = import.meta.env.VITE_BASE_API_URL;
 export const fetchHeroList = async (): Promise<Hero[]> => {
   try {
     const response = await fetch(`${BASE_API_URL}/hero-list/`);
@@ -23,7 +22,6 @@ export const fetchHeroList = async (): Promise<Hero[]> => {
         const heroData = record.data.hero.data;
 
         const sortLabels = heroDetail!.sortlabel || [];
-        console.log(`Hero: ${heroData.name}, Sort Labels: ${sortLabels}`);
 
         const roles: Role[] = sortLabels
           .filter((label) => label !== "")
