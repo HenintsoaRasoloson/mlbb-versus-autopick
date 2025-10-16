@@ -8,8 +8,8 @@
     }
   ],
   "routes": [
-    { "src": "/api/hero-list", "dest": "/api/hero-list" },
-    { "src": "/api/hero-detail/(?<id>.*)", "dest": "/api/hero-detail/$1" },
+    { "src": "/api/hero-list", "dest": "/api/hero-list.ts" },
+    { "src": "/api/hero-detail/(?<id>.*)", "dest": "/api/hero-detail/[id].ts" },
     { "src": "/(.*)", "dest": "/" }
   ]
 }
