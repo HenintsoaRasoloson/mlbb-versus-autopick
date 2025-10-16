@@ -1,7 +1,7 @@
-import type { NowRequest, NowResponse } from "@vercel/node";
+import type { NowResponse } from "@vercel/node";
 import fetch from "node-fetch";
 
-export default async (req: NowRequest, res: NowResponse) => {
+export default async (res: NowResponse) => {
   try {
     const response = await fetch(
       "https://mlbb-stats.ridwaanhall.com/hero-list/"
