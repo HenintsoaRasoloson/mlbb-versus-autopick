@@ -58,6 +58,17 @@ You can try out the live demo soon
 
 ---
 
+## 🔧 Configuration
+
+1. Créez un fichier `.env` à la racine du projet.
+2. Ajoutez l'URL de l'API comme suit :
+
+```env
+VITE_API_BASE_URL=https://mlbb-stats.ridwaanhall.com/api
+```
+
+---
+
 ## 📥 Installation
 
 1. Clone the repository:
@@ -66,7 +77,9 @@ You can try out the live demo soon
    git clone https://github.com/your-username/mlbb-versus-autopick.
    ```
 
-   2.Navigate to the project directory:
+````
+
+2.Navigate to the project directory:
 
 ```bash
 cd mlbb-versus-autopick
@@ -76,7 +89,6 @@ cd mlbb-versus-autopick
 
 ```bash
 npm install
-
 ```
 
 ## Usage
@@ -93,3 +105,4 @@ Contributions are welcome! If you have ideas to improve the application or found
 3. Commit your changes (git commit -m 'Add some feature').
 4. Push to the branch (git push origin feature/your-feature).
 5. Open a pull request.
+````
