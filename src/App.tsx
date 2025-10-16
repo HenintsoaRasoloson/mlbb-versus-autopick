@@ -16,6 +16,8 @@ import {
 } from "./components/StylesComponents";
 import { Loading } from "./components/Loading";
 
+import { Analytics } from "@vercel/analytics/next";
+
 function App() {
   const [isModalOpen, setIsModalOpen] = useState<boolean>(false);
   const [selectedHero, setSelectedHero] = useState<Hero | null>(null);
@@ -65,6 +67,7 @@ function App() {
 
   return (
     <PageContainer>
+      <Analytics />
       <GlobalStyles />
       <HeaderTitle>MLBB 1v1 Versus</HeaderTitle>
       <DescriptionText>
